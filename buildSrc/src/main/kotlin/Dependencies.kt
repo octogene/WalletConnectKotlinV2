@@ -1,7 +1,7 @@
 import org.gradle.api.JavaVersion
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 
-const val kotlinVersion = "1.6.10"
+const val kotlinVersion = "1.6.21"
 val jvmVersion = JavaVersion.VERSION_11
 const val sqlDelightVersion = "1.5.2"
 
@@ -83,7 +83,7 @@ fun DependencyHandlerScope.sqlDelight() {
 }
 
 fun DependencyHandlerScope.koin() {
-    val koinVersion = "3.1.5"
+    val koinVersion = "3.2.0"
 
     "api"("io.insert-koin:koin-android:$koinVersion")
 }
